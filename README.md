@@ -49,12 +49,22 @@ The class Transactions.java has :
     Example : 16/08/2016 10:15:12 will be converted to 2016-08-16T10:15:12
   2. a method doReadCSVasList() that reads an input CSV file and returns a list of TransactionEntity type.
   3. a double method calculateBalance() that calculates the relative balance by checking the input parameters(Account Id,From        date and Todate) against the  corresponding fields from the CSV file.
-## ** APPROACHES:**  
+## ** Approaches:**  
 1. both input date time strings(fromdate and todate), and createdAt field of CSV file are parsed into LocalDateTime format for better calculation and to reduce conflicts between user input and CSV input datetime values
 2. Added $ to the resultant relative balance using Locale.currency.
 3. Test class is created with given input to ensure the code gives expected results
 
 ## ** RUNNING THE JAVA CLASS**
-Run as Java application and give inputs as per the sample data.
+Run as Java application and give inputs as per the sample data.  
+give input date and time in the format dd/mm/yyy hh:mm:ss  
+SAMPLE OUTPUT:  
+Enter Account ID:    
+ACC334455   
+Enter From Date and Time:    
+20/10/2018 12:00:00   
+Enter To date and Time:    
+20/10/2018 19:00:00   
+Relative balance for the given period is : -$35.50   
+Number of transactions included : 2     
 
 
